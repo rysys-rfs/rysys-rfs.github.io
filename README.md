@@ -59,20 +59,24 @@ To test the built production bundle locally:
 npm run preview
 ```
 
-### 3. Deploying to GitHub Pages (`gh-pages`)
+### 3. Deploying to GitHub Pages
 
-To deploy this project to GitHub Pages:
+#### Option A: Automatic via GitHub Actions (Recommended)
+This repository includes a pre-configured GitHub Actions workflow in `.github/workflows/deploy.yml`.
 
-1. Ensure the `base` path in `vite.config.ts` matches your repository name if hosting under `https://<user>.github.io/<repo>`:
-   ```ts
-   // vite.config.ts
-   export default defineConfig({
-     base: '/', // or '/<repo-name>/'
-     // ...
-   });
-   ```
+1. Push your repository to GitHub (`main` or `master` branch).
+2. On GitHub, navigate to **Settings > Pages**.
+3. Under **Build and deployment > Source**, select **GitHub Actions**.
+4. Every push to `main` will automatically build and publish your portfolio site.
 
-2. Build the app and push the `dist/` directory to the `gh-pages` branch, or configure GitHub Actions for static page deployments.
+#### Option B: Manual CLI Deployment
+You can also deploy directly from your local terminal using the `gh-pages` script:
+
+```bash
+npm run deploy
+```
+
+This automatically runs `npm run build` and publishes the static `dist/` directory to your `gh-pages` branch.
 
 ---
 
