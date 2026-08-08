@@ -1,11 +1,120 @@
-<div align="center">
+# Ryne Shelton — Engineering Portfolio & Interactive CV
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+[![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-  <h1>Built with AI Studio</h2>
+A modern, high-performance portfolio website and interactive CV for **Ryne Shelton**, Electrical & Computer Engineer (4.0 GPA). Featuring an interactive PDF resume viewer, engineering project highlights (PGE grid automation, USGS geospatial ML pipelines, Intel post-silicon validation), and an embedded ambient lo-fi music player.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 Quick Start & Development
 
-</div>
+### Prerequisites
+
+- **Node.js**: `v18.x` or higher
+- **Package Manager**: `npm` (or `bun` / `yarn`)
+
+### 1. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/rysys-rfs/rysys-rfs.github.io.git
+cd rysys-rfs.github.io
+npm install
+```
+
+### 2. Run Local Development Server
+
+Start the local Vite development server:
+
+```bash
+npm run dev
+```
+
+The application will launch at:
+```text
+http://localhost:3000
+```
+
+---
+
+## 📦 Production Build & Deployment
+
+### 1. Create Production Build
+
+Compile and bundle static assets into the `dist` directory:
+
+```bash
+npm run build
+```
+
+### 2. Preview Production Build Locally
+
+To test the built production bundle locally:
+
+```bash
+npm run preview
+```
+
+### 3. Deploying to GitHub Pages (`gh-pages`)
+
+To deploy this project to GitHub Pages:
+
+1. Ensure the `base` path in `vite.config.ts` matches your repository name if hosting under `https://<user>.github.io/<repo>`:
+   ```ts
+   // vite.config.ts
+   export default defineConfig({
+     base: '/', // or '/<repo-name>/'
+     // ...
+   });
+   ```
+
+2. Build the app and push the `dist/` directory to the `gh-pages` branch, or configure GitHub Actions for static page deployments.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Framework**: React 18 + TypeScript
+- **Bundler & Dev Server**: Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Assets & Documents**: Embedded PDF Resume Viewer, custom audio synthesizer & lo-fi playlist stream, official organization badges (IEEE, CAT, MECOP, OSGC)
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── public/
+│   ├── rShelton_Resume_August2026.pdf   # Official PDF Resume
+│   ├── self.png                           # Profile watercolor portrait
+│   ├── ieee.png, cat.jpeg, mecop.jpg      # Affiliation badges
+│   └── osgc.png                           # Oregon NASA Space Grant badge
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx                     # Header navigation bar
+│   │   ├── Hero.tsx                       # Hero section with 4.0 GPA metrics & profile
+│   │   ├── About.tsx                      # Summary & background overview
+│   │   ├── Projects.tsx                   # PGE, USGS, Intel & Datalogic engineering projects
+│   │   ├── ResumeViewer.tsx               # PDF viewer & formatted text mode
+│   │   ├── MusicPlayer.tsx                # ChillHop ambient player & stream playlist
+│   │   ├── Skills.tsx                     # ECE core competencies & tools
+│   │   ├── Experience.tsx                 # Work history timeline (Intel, Hitachi, PSU, Datalogic)
+│   │   ├── Contact.tsx                    # Contact card & social links
+│   │   └── Footer.tsx                     # Footer navigation
+│   ├── App.tsx                            # Main layout component
+│   └── main.tsx                           # Application entry point
+├── package.json                           # Dependencies and script definitions
+├── vite.config.ts                         # Vite configuration
+└── README.md                              # Documentation
+```
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for details.

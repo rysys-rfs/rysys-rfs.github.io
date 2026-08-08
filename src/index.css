@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-slate-900 min-h-screen antialiased font-mono;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  }
+}
+
+/* Portland Flag Colors & Neobrutalist Utilitarian Theme Utilities */
+:root {
+  --portland-green: #00482B;
+  --portland-gold: #FFD100;
+  --portland-blue: #003865;
+  --portland-sky: #0077C8;
+}
+
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 72, 43, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 72, 43, 0.08) 1px, transparent 1px);
+}
+
+/* Neobrutalist Utilitarian Card Styles for Light/White Theme */
+.neobrutal-card {
+  @apply bg-white border-2 border-slate-900 rounded-lg transition-all duration-200 shadow-[4px_4px_0px_0px_#00482B] hover:border-slate-900 hover:shadow-[6px_6px_0px_0px_#FFD100] hover:-translate-x-0.5 hover:-translate-y-0.5;
+}
+
+.neobrutal-badge {
+  @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono font-bold border-2 border-slate-900 uppercase tracking-wider;
+}
+
+.neobrutal-btn-primary {
+  @apply px-4 py-2 text-xs font-mono font-bold rounded-md bg-[#00482B] text-white border-2 border-slate-900 shadow-[3px_3px_0px_0px_#FFD100] hover:shadow-[5px_5px_0px_0px_#FFD100] hover:bg-[#003820] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all active:translate-x-0 active:translate-y-0 active:shadow-none;
+}
+
+.neobrutal-btn-gold {
+  @apply px-4 py-2 text-xs font-mono font-bold rounded-md bg-[#FFD100] text-slate-950 border-2 border-slate-900 shadow-[3px_3px_0px_0px_#00482B] hover:shadow-[5px_5px_0px_0px_#003865] hover:bg-amber-300 hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all active:translate-x-0 active:translate-y-0 active:shadow-none;
+}
+
+.neobrutal-btn-secondary {
+  @apply px-4 py-2 text-xs font-mono font-bold rounded-md bg-white text-slate-900 border-2 border-slate-900 shadow-[3px_3px_0px_0px_#003865] hover:bg-slate-100 hover:shadow-[4px_4px_0px_0px_#00482B] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all active:translate-x-0 active:translate-y-0 active:shadow-none;
+}
+
+
