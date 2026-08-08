@@ -85,7 +85,7 @@ export const Experience: React.FC = () => {
             <div className="relative shrink-0">
               <div className="w-32 h-40 sm:w-36 sm:h-44 rounded-md overflow-hidden border-2 border-slate-900 shadow-[3px_3px_0px_0px_#FFD100] bg-white flex items-center justify-center">
                 <img
-                  src="/propic.png"
+                  src="./propic.png"
                   alt="Ryne F. Shelton - Professional Headshot"
                   className="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-300"
                   referrerPolicy="no-referrer"

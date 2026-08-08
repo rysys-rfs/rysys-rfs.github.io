@@ -16,7 +16,7 @@ export const ResumeViewer: React.FC = () => {
 
   const handleDownloadPDF = () => {
     const link = document.createElement('a');
-    link.href = '/rShelton_Resume_August2026.pdf';
+    link.href = './rShelton_Resume_August2026.pdf';
     link.download = 'rShelton_Resume_August2026.pdf';
     document.body.appendChild(link);
     link.click();
@@ -27,7 +27,7 @@ export const ResumeViewer: React.FC = () => {
   };
 
   const handlePrint = () => {
-    window.open('/rShelton_Resume_August2026.pdf', '_blank');
+    window.open('./rShelton_Resume_August2026.pdf', '_blank');
   };
 
   return (
@@ -147,7 +147,7 @@ export const ResumeViewer: React.FC = () => {
               )}
 
               <a
-                href="/rShelton_Resume_August2026.pdf"
+                href="./rShelton_Resume_August2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-1.5 rounded bg-white border border-slate-900 text-slate-900 hover:bg-[#FFD100] transition-all flex items-center gap-1 text-xs px-2.5 font-mono font-bold"
@@ -171,7 +171,7 @@ export const ResumeViewer: React.FC = () => {
           {viewMode === 'pdf' ? (
             <div className="w-full h-[600px] sm:h-[650px] bg-slate-200">
               <iframe
-                src="/rShelton_Resume_August2026.pdf"
+                src="./rShelton_Resume_August2026.pdf"
                 className="w-full h-full border-0"
                 title="Ryne Shelton PDF Resume"
               />
@@ -313,16 +313,16 @@ export const ResumeViewer: React.FC = () => {
                     </h2>
                     <div className="flex items-center gap-2">
                       <div className="bg-white p-1 rounded border border-slate-900 h-8 flex items-center justify-center">
-                        <img src="/ieee.png" alt="IEEE" className="h-6 w-auto object-contain" />
+                        <img src="./ieee.png" alt="IEEE" className="h-6 w-auto object-contain" />
                       </div>
                       <div className="bg-slate-950 p-1 rounded border border-slate-900 h-8 flex items-center justify-center">
-                        <img src="/cat.jpeg" alt="CAT" className="h-6 w-auto rounded object-contain" />
+                        <img src="./cat.jpeg" alt="CAT" className="h-6 w-auto rounded object-contain" />
                       </div>
                       <div className="bg-white p-1 rounded border border-slate-900 h-8 flex items-center justify-center">
-                        <img src="/mecop.jpg" alt="MECOP" className="h-6 w-auto rounded object-contain" />
+                        <img src="./mecop.jpg" alt="MECOP" className="h-6 w-auto rounded object-contain" />
                       </div>
                       <div className="bg-white p-1 rounded border border-slate-900 h-8 flex items-center justify-center">
-                        <img src="/osgc.png" alt="OSGC" className="h-6 w-auto object-contain" />
+                        <img src="./osgc.png" alt="OSGC" className="h-6 w-auto object-contain" />
                       </div>
                     </div>
                   </div>

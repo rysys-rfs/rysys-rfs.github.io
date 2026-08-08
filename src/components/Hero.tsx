@@ -81,16 +81,16 @@ export const Hero: React.FC = () => {
             <div className="pt-2 flex flex-wrap items-center gap-3">
               <div className="flex flex-wrap items-center gap-3 sm:gap-4 bg-slate-50 border-2 border-slate-900 p-3 rounded-lg shadow-[4px_4px_0px_0px_#00482B]">
                 <div className="bg-white px-3 py-1.5 rounded border-2 border-slate-900 flex items-center justify-center h-11 sm:h-12 hover:scale-105 transition-transform shadow-[2px_2px_0px_0px_#00482B]" title="IEEE - Institute of Electrical and Electronics Engineers">
-                  <img src="/ieee.png" alt="IEEE" className="h-7 sm:h-8 w-auto object-contain" />
+                  <img src="./ieee.png" alt="IEEE" className="h-7 sm:h-8 w-auto object-contain" />
                 </div>
                 <div className="bg-white px-3 py-1.5 rounded border-2 border-slate-900 flex items-center justify-center h-11 sm:h-12 hover:scale-105 transition-transform shadow-[2px_2px_0px_0px_#FFD100]" title="CAT - Computer Action Team (MCECS - Maseeh College of Engineering and Computer Science)">
-                  <img src="/cat.jpeg" alt="CAT - Computer Action Team (MCECS)" className="h-7 sm:h-8 w-auto object-contain rounded" />
+                  <img src="./cat.jpeg" alt="CAT - Computer Action Team (MCECS)" className="h-7 sm:h-8 w-auto object-contain rounded" />
                 </div>
                 <div className="bg-white px-3 py-1.5 rounded border-2 border-slate-900 flex items-center justify-center h-11 sm:h-12 hover:scale-105 transition-transform shadow-[2px_2px_0px_0px_#003865]" title="MECOP Engineering Scholar">
-                  <img src="/mecop.jpg" alt="MECOP" className="h-7 sm:h-8 w-auto object-contain rounded" />
+                  <img src="./mecop.jpg" alt="MECOP" className="h-7 sm:h-8 w-auto object-contain rounded" />
                 </div>
                 <div className="bg-white px-3 py-1.5 rounded border-2 border-slate-900 flex items-center justify-center h-11 sm:h-12 hover:scale-105 transition-transform shadow-[2px_2px_0px_0px_#00482B]" title="OSGC - Oregon Space Grant Consortium (NASA Aerospace Scholar)">
-                  <img src="/osgc.png" alt="OSGC" className="h-7 sm:h-8 w-auto object-contain" />
+                  <img src="./osgc.png" alt="OSGC" className="h-7 sm:h-8 w-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
               <div className="relative group rounded-lg overflow-hidden border-2 border-slate-900 bg-white shadow-[4px_4px_0px_0px_#00482B] flex flex-col justify-between h-full min-h-[260px]">
                 <div className="relative w-full h-full min-h-[260px] overflow-hidden flex items-center justify-center">
                   <img
-                    src="/self.png"
+                    src="./self.png"
                     alt="Ryne Shelton"
                     className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-300"
                     referrerPolicy="no-referrer"
@@ -161,7 +161,7 @@ export const Hero: React.FC = () => {
             {/* Portland Union Station / Silicon Forest Regional Skyline Card */}
             <div className="relative rounded-lg overflow-hidden border-2 border-slate-900 bg-slate-950 shadow-[4px_4px_0px_0px_#003865] group h-44 sm:h-48 flex flex-col justify-end">
               <img
-                src="/portland_skyline.jpg"
+                src="./portland_skyline.jpg"
                 alt="Portland Union Station Skyline at Night"
                 className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-90"
                 referrerPolicy="no-referrer"

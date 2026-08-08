@@ -72,7 +72,7 @@ export const About: React.FC = () => {
             {/* Left imagery panel */}
             <div className="lg:col-span-5 relative min-h-[220px] lg:min-h-full overflow-hidden group">
               <img
-                src="/portland_skyline.jpg"
+                src="./portland_skyline.jpg"
                 alt="Portland Oregon Skyline & Mount Hood - Silicon Forest Hub"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
                 referrerPolicy="no-referrer"

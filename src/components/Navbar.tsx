@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
         >
           <div className="h-11 sm:h-12 bg-white rounded-md p-1 border-2 border-slate-900 shadow-[3px_3px_0px_0px_#FFD100] flex items-center transition-all group-hover:shadow-[4px_4px_0px_0px_#00482B] group-hover:-translate-y-0.5">
             <img
-              src="/rfs.png"
+              src="./rfs.png"
               alt="RFS - Ryne F. Shelton"
               className="h-full w-auto object-contain rounded"
               referrerPolicy="no-referrer"
